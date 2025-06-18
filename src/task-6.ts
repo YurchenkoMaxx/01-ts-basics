@@ -7,6 +7,6 @@ getFirstElement<string>(["a", "b", "c"]);     // "a"
 getFirstElement<boolean>([true, false, true]);
 
 
-console.log(`First element of numbers: ${getFirstElement([1, 2, 3])}`);
-console.log(`First element of strings: ${getFirstElement(["a", "b", "c"])}`)
-console.log(`First element of booleans: ${getFirstElement([true, false, true])}`);
+console.log(`First element of numbers: ${getFirstElement<number>([1, 2, 3])}`);
+console.log(`First element of strings: ${getFirstElement<string>(["a", "b", "c"])}`)
+console.log(`First element of booleans: ${getFirstElement<boolean>([true, false, true])}`);
